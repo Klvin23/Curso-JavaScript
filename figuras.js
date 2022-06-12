@@ -3,43 +3,59 @@
 console.group ("Cuadrados");
 
 console.log ("Hello World");
-const ladoCuadrado = 5;
-console.log ("Los lados del cuadrado miden: " + ladoCuadrado + "cm");
+//const ladoCuadrado = 5;
+//console.log ("Los lados del cuadrado miden: " + ladoCuadrado + "cm");
+
+function perimetroCuadrado(lado){
+    return lado * 4;
+}
 
 
-const perimetroCuadrado = ladoCuadrado * 4;
-console.log ("El perimetro del cuadrado es: " + perimetroCuadrado + "cm");
+//console.log ("El perimetro del cuadrado es: " + perimetroCuadrado + "cm");
 
 
-const areaCuadrado = ladoCuadrado * ladoCuadrado;
-console.log ("El area del cuadrado es: " + areaCuadrado + "cm^2");
+function areaCuadrado(lado){
+    return lado * lado;
+}
+//console.log ("El area del cuadrado es: " + areaCuadrado + "cm^2");
 console.groupEnd;
 
 //Codigo del triángulo 
 console.group ("Triángulos");
 
-const ladoTriangulo1 = 6;
-const ladoTriangulo2 = 6;
-const baseTriangulo  = 4;
+//const ladoTriangulo1 = 6;
+//const ladoTriangulo2 = 6;
+//const baseTriangulo  = 4;
 
-console.log(
-    "Los lados del triángulo miden: " 
-    + ladoTriangulo1  
-    +  "cm, " 
-    + ladoTriangulo2  
-    +  "cm, " 
-    + baseTriangulo  
-    +  "cm "
-    );
+//console.log(
+   // "Los lados del triángulo miden: " 
+    //+ ladoTriangulo1  
+    //+  "cm, " 
+    //+ ladoTriangulo2  
+    //+  "cm, " 
+    //+ baseTriangulo  
+    //+  "cm "
+    //);
 
 
-    const alturaTriangulo  = 5.5;
-    console.log ("La altura del triángulo es: " + alturaTriangulo + "cm");
+    //const alturaTriangulo  = 5.5;
+    //console.log ("La altura del triángulo es: " + alturaTriangulo + "cm");
 
-    const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
-    console.log ("El perímetro del triángulo es: " + perimetroTriangulo + "cm");
+    function perimetroTriangulo(lado1, lado2, base){
+        return lado1 + lado2 + base;
+
+    }
+
+    //console.log ("El perímetro del triángulo es: " + perimetroTriangulo + "cm");
 
     const areaTriangulo = (baseTriangulo * alturaTriangulo) /2;
+
+    function areaTriangulo(base, altura){
+        return base * altura;
+
+    }
+
+
     console.log ("El área del triángulo es: " + areaTriangulo + "cm^2");
 
 
